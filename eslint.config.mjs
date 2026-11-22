@@ -17,7 +17,7 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
-const TS_FILES = ['src/**/*.ts', 'runtime/**/*.ts', 'tests/**/*.ts']
+const TS_FILES = ['src/**/*.ts', 'runtime/**/*.ts', 'mcp/src/**/*.ts', 'tests/**/*.ts']
 const JS_FILES = ['scripts/**/*.mjs', '*.mjs']
 
 const noUnused = [

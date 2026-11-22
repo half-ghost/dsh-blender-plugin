@@ -38,6 +38,7 @@
     "!runtime/*.bak-*",
     "!runtime/*.v1-*",
     "skills",
+    "antigravity",
     "docs",
     "tests",
     "vendor",
@@ -122,8 +123,8 @@
     "typecheck:scripts": "tsc -p tsconfig.scripts.json",
     "lint": "eslint . --max-warnings=0 && node scripts/check-any.mjs && node scripts/check-exceptions.mjs && node scripts/check-plan-ids.mjs --enforce && node scripts/check-doc-paths.mjs --enforce && node scripts/check-ports.mjs",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write \"{src,tests,scripts,runtime}/**/*.{ts,mts,cts,js,mjs,cjs,json}\" \"*.{ts,json,yml,yaml}\" \"*.mjs\" \".prettierrc.json\" \".github/**/*.{yml,yaml}\"",
-    "format:check": "prettier --check \"{src,tests,scripts,runtime}/**/*.{ts,mts,cts,js,mjs,cjs,json}\" \"*.{ts,json,yml,yaml}\" \"*.mjs\" \".prettierrc.json\" \".github/**/*.{yml,yaml}\"",
+    "format": "prettier --write \"{src,tests,scripts,runtime,mcp}/**/*.{ts,mts,cts,js,mjs,cjs,json}\" \"*.{ts,json,yml,yaml}\" \"*.mjs\" \".prettierrc.json\" \".github/**/*.{yml,yaml}\"",
+    "format:check": "prettier --check \"{src,tests,scripts,runtime,mcp}/**/*.{ts,mts,cts,js,mjs,cjs,json}\" \"*.{ts,json,yml,yaml}\" \"*.mjs\" \".prettierrc.json\" \".github/**/*.{yml,yaml}\"",
     "check:structure": "node scripts/check-structure.mjs",
     "check:exceptions": "node scripts/check-exceptions.mjs",
     "check:routes": "node scripts/check-routes.mjs",
@@ -145,7 +146,10 @@
     "test:watch": "node node_modules/vitest/vitest.mjs",
     "build:host": "node scripts/build.mjs host",
     "build:runtime": "node scripts/build.mjs runtime",
+    "build:mcp": "node scripts/build.mjs mcp",
     "typecheck:runtime": "node scripts/typecheck.mjs -p tsconfig.runtime.json",
+    "typecheck:mcp": "node scripts/typecheck.mjs -p tsconfig.mcp.json",
+    "install:antigravity": "node scripts/install-antigravity.mjs",
     "test:parity": "node scripts/check-parity.mjs",
     "smoke:install": "node scripts/install-smoke.mjs",
     "test:e2e": "node scripts/test.mjs e2e",
@@ -174,6 +178,9 @@
     },
     "./client": {
       "default": "./lib/client.js"
+    },
+    "./mcp": {
+      "default": "./lib/mcp/index.js"
     },
     "./package.json": "./package.json"
   }

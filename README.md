@@ -1,8 +1,8 @@
 # DSH × Blender
 
-[简体中文](docs/zh/README.md)
+[简体中文](docs/zh/README.md) · [Antigravity MCP Setup](antigravity/README.md)
 
-DSH × Blender connects DeepSeek Harness to Blender so an agent can build, inspect, validate, and export 3D scenes in a real Blender session. The normal workflow is GUI-first: start Blender, connect the addon, and let the agent look, change, and verify. When no GUI is available, background headless jobs (`blender_run(kind="headless")`) still execute scripts and return rendered frames.
+DSH × Blender connects DeepSeek Harness (and Google Antigravity / standard MCP hosts via `npm run install:antigravity`) to Blender so an agent can build, inspect, validate, and export 3D scenes in a real Blender session. The normal workflow is GUI-first: start Blender, connect the addon, and let the agent look, change, and verify. When no GUI is available, background headless jobs (`blender_run(kind="headless")`) still execute scripts and return rendered frames.
 
 ## Contents
 

@@ -1,0 +1,15 @@
+{
+  "name": "blender-bridge",
+  "displayName": "Blender Bridge",
+  "version": "3.1.0-alpha.1",
+  "description": "Drive a live Blender session from Antigravity over MCP: interactive Python modeling, viewport inspection, 34-family / 228-op modeling & QA catalog, assembly checks, headless jobs, and transaction rollbacks.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/half-ghost/dsh-blender-plugin"
+  },
+  "suggestedPrompts": [
+    "Check Blender connection status with blender_session doctor",
+    "Create a clean low-poly desk lamp in Blender and show me viewport screenshots",
+    "Inspect the current Blender scene objects and run audit_mesh on all meshes"
+  ]
+}

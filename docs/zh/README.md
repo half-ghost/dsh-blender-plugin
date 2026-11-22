@@ -1,8 +1,8 @@
 # DSH × Blender 直连实时插件
 
-[English](../../README.md)
+[English](../../README.md) · [Antigravity 插件安装说明](../../antigravity/README.md)
 
-DSH × Blender 把 DeepSeek Harness 接到 Blender，让 AI 能在真实 Blender 会话里建模、检查、验收和导出。默认走 GUI：先打开 Blender、连接 addon，AI 对着你正在看的场景做“看一眼 → 改一步 → 再确认”。没有 GUI 时，后台无头作业（`blender_run(kind="headless")`）仍能执行脚本并返回渲染图。
+DSH × Blender 把 DeepSeek Harness（也支持通过 `npm run install:antigravity` 接入 Google Antigravity / 标准 MCP 宿主）接到 Blender，让 AI 能在真实 Blender 会话里建模、检查、验收和导出。默认走 GUI：先打开 Blender、连接 addon，AI 对着你正在看的场景做“看一眼 → 改一步 → 再确认”。没有 GUI 时，后台无头作业（`blender_run(kind="headless")`）仍能执行脚本并返回渲染图。
 
 ## 目录
 
